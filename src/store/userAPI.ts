@@ -5,7 +5,7 @@ import {IUser} from "../models/IUser";
 export const userAPI = createApi({
     reducerPath: "userapi",
     baseQuery: fetchBaseQuery({
-        baseUrl: "http://localhost:3000",
+        baseUrl: "https://search-server23.herokuapp.com/",
     }),
     endpoints: build => ({
         searchUser: build.query<IUser[], string>({
